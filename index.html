@@ -13,8 +13,7 @@
   <!-- jQuery -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <!-- FontAwesome 圖標庫 -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/3fbf659fa7.js" crossorigin="anonymous"></script>
   <!-- Font Google -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 </head>
@@ -30,8 +29,8 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="" data-scroll-nav="0">Top</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="1">Project</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="5">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="1">Introduction</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="2">Features</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="3">Author</a></li>
         </ul>
       </div>
@@ -48,28 +47,79 @@
               <h1 class="white">IoT 自走小車專案</h1>
               <h6 class="white">- Designed by Jhih Yong, Chen</h6>
             </div>
+            <img src="images/car_pic.png" class="img-fluid wow fadeInLeft"/>
           </div>
-          <div class="col-md-4 col-sm-12"> <img src="images/phone-screen.png" class="img-fluid wow fadeInUp"/></div>
+          <div class="col-md-4 col-sm-12 text-center">
+            <img src="images/phone-screen.png" class="img-fluid wow fadeInRight"/>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!------- Banner End -------> 
-  <!-------About End------->
+  <!-------Introduction End------->
   <section class="about section-padding prelative" data-scroll-index='1'>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="sectioner-header text-center">
-            <h3>Project</h3>
+            <h3>Introduction</h3>
             <span class="line"></span>
-            <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
+            <p>本專案所開發出的APP可以透過Bluetooth和Wi-Fi來進行小車的相關控制。</p>
+          </div>
+        </div>
+        <div class="section-content text-center">
+          <h5 class="font-SegoeP">Firmware</h5>
+          <span class="line-2"></span>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s"> <i class="fa fa-solid fa-microchip" aria-hidden="true"></i>
+                <h5>STM32</h5>
+                <p>M0開發板提供豐富的硬體接口和處理能力，控制與運用各類感測器收集環境數據。</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.6s"> <i class="fa fa-solid fa-temperature-quarter" aria-hidden="true"></i></i>
+                <h5>Sensor</h5>
+                <p>透過各種感測器收集環境數據，如溫度、濕度、距離等等。並與STM32連接</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.4s"> <i class="fa fa-solid fa-microchip" aria-hidden="true"></i>
+                <h5>Raspberry Pi</h5>
+                <p>使用Mjpg-streamer與Django分別提供網路Camera畫面與網路接收指令的伺服器端</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-content text-center">
+          <h5 class="font-SegoeP">APP</h5>
+          <span class="line-2"></span>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s"> <i class="fa fa-solid fa-mobile-screen" aria-hidden="true"></i>
+                <h5>Android Studio</h5>
+                <p>主要以Kotlin進行開發，介面設計以直覺性和美觀性為主，提升使用者體驗。</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.6s"> <i class="fa fa-solid fa-code" aria-hidden="true"></i></i>
+                <h5>Code</h5>
+                <p>透過使用Fragment增加APP效能，也便於維護和擴展。</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.4s"> <i class="fa fa-solid fa-database" aria-hidden="true"></i>
+                <h5>Firebase</h5>
+                <p>擁有使用者登入、註冊、個人資料顯示與修改介面，透過Firebase管理使用者資料</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-<!-------About End------->
+<!-------Introduction End------->
 <!-- jquery and bootstrap js --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"

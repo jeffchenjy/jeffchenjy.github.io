@@ -171,6 +171,13 @@ h6 {
 	border-bottom: 2px dashed #8e1efc;
 	margin-left: -75px;
 }
+.line-2 {
+	height: 2px;
+	width: 50px;
+	background: #8e1efc;
+	display: block;
+	margin: 20px auto 20px;
+}
 .sectioner-header p {
 	color:#818992;
 	font-size: 17px;
@@ -580,4 +587,7 @@ h3 {
 .footer-copy p {
 	font-size: 10px;
 }
+}
+.font-SegoeP {
+	font-family: Segoe Print;
 }
