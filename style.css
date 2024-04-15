@@ -311,11 +311,8 @@ h6 {
 }
 /* Author section */
 .author {
-	background: #fafafa;
+	background: #dad6d6;
 	border-top: 1px solid #e4e4e4;
-}
-.author-detail {
-	margin-top:40px;
 }
 .author-detail img {
 	border-radius: 50%;
@@ -327,19 +324,16 @@ h6 {
 	font-size: 17px;
 	margin-bottom: 0px;
 }
-.author-first-text {
-	margin-top: 80px;
-	margin-left: 50px;
-	text-align: left;
-	vertical-align: middle;
-	line-height:20px;
+.author-header {
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 .author-text {
 	margin-top: 10px;
-	margin-left: 50px;
+	margin-left: 10px;
 	text-align: left;
 	vertical-align: middle;
-	line-height:20px;
+	line-height:10px;
 }
 
 .bx-prev {
