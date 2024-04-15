@@ -293,14 +293,16 @@ h6 {
 	margin-bottom: 55px;
 }
 .single-feature-right {
-	margin-top: 40px;
-	margin-bottom: 60px;
+	margin-top: 20px;
 }
 .single-feature h5, .single-feature-left h5, .single-feature-right h5{
 	font-size: 16px;
 }
 .single-feature p , .single-feature-left p, .single-feature-right p{
 	font-size: 13px;
+}
+.car-feature {
+	background: #c2a8cf;
 }
 
 .media-right-margin {
@@ -320,7 +322,8 @@ h6 {
 }
 /* Author section */
 .author {
-	background: #dad6d6;
+	padding-top: 40px;
+	padding-bottom: 20px;
 	border-top: 1px solid #e4e4e4;
 }
 .author-detail img {
