@@ -298,8 +298,6 @@ h6 {
 .single-feature p {
 	font-size: 13px;
 }
-.icon-border {
-}
 .icon-border span {
 	display: block;
 	position: relative;
@@ -311,23 +309,39 @@ h6 {
 	line-height: 50px;
 	border: 1px solid rgb(142, 30, 252);
 }
-.team {
+/* Author section */
+.author {
 	background: #fafafa;
 	border-top: 1px solid #e4e4e4;
 }
-.team-detail {
+.author-detail {
 	margin-top:40px;
 }
-.team-detail img {
+.author-detail img {
 	border-radius: 50%;
-	width: 70%;
+	width: 50%;
 }
-.team-detail h4 {
+.author-detail h4 {
 	color:rgb(142, 30, 252);
 	margin-top: 20px;
 	font-size: 17px;
 	margin-bottom: 0px;
 }
+.author-first-text {
+	margin-top: 80px;
+	margin-left: 50px;
+	text-align: left;
+	vertical-align: middle;
+	line-height:20px;
+}
+.author-text {
+	margin-top: 10px;
+	margin-left: 50px;
+	text-align: left;
+	vertical-align: middle;
+	line-height:20px;
+}
+
 .bx-prev {
 	left: -90px !important;
 	background: url(images/arrow-left.png) no-repeat !important;
@@ -376,34 +390,6 @@ h6 {
 	font-size: 1.5em;
 	font-weight: 700;
 }
-.faq {
-	background: #7a60ff;
-	background: linear-gradient(to left, #7a60ff, #cd9ffa);
-	padding:100px 0px;
-	position:relative;
-}
-.faq::before {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: url(images/pattern.png);
-}
-.faq-content {
-	margin: 20px 0px;
-}
-.faq-content h4 {
-	font-weight: 400;
-	font-size: 20px;
-}
-.faq-content p {
-	color: #818992;
-	font-weight:300;
-	margin-top:15px;
-}
 #contact_form .form-input {
 	border: 1px solid #e4e4e4;
 }
@@ -432,16 +418,6 @@ input {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.btn-grad {
- padding: .7rem 2rem;
-	display: inline-block;
-	color: #fff;
-	border-radius: 2rem;
-	border: 0;
-	background: #7a60ff;
-	background: linear-gradient(to left, #7a60ff, #cd9ffa);
-	cursor:pointer;
-}
 .contact-info {
 	padding: 2rem 2rem 1rem;
 	border-radius: 8px;
@@ -457,20 +433,6 @@ input {
 .contact-item p {
 	line-height: 20px;
 	margin: 0;
-}
-.download ul {
-	list-style: none;
-}
-.download ul li {
-	display: inline-block;
-	margin: 0px 10px 10px 0px;
-}
-.download ul li a {
-	display: block;
-}
-.download ul li a img {
-	width: 150px;
-	border-radius: 7px;
 }
 .footer-copy {
 	background: #ffffff;
@@ -537,12 +499,7 @@ h3 {
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
-.team-detail {
-	margin-top: 20px;
-}
-.team-detail img {
-	width: 50%;
-}
+
 .bx-controls
 {
 	display:none;
@@ -567,23 +524,11 @@ h3 {
 .section-content {
 	margin-top: 40px;
 }
-.faq-content {
-	margin: 10px 0px;
-}
-.faq-content h4 {
-	font-size: 16px;
-}
-.faq-content p {
-	font-size: 13px;
-}
 #contact_form {
 	margin-bottom:20px;
 }
 .contact-item {
 	font-size: 12px;
-}
-.download ul li a img {
-	width: 120px;
 }
 .footer-copy p {
 	font-size: 10px;
@@ -592,7 +537,6 @@ h3 {
 .font-SegoeP {
 	font-family: Segoe Print;
 }
-
 .carousel-indicators{
     max-width: 120px;
     margin-left: auto;
