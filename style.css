@@ -292,10 +292,14 @@ h6 {
 .single-feature-left {
 	margin-bottom: 55px;
 }
-.single-feature h5 , .single-feature-left h5{
+.single-feature-right {
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+.single-feature h5, .single-feature-left h5, .single-feature-right h5{
 	font-size: 16px;
 }
-.single-feature p , .single-feature-left p{
+.single-feature p , .single-feature-left p, .single-feature-right p{
 	font-size: 13px;
 }
 
