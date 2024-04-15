@@ -320,23 +320,23 @@ h6 {
 	line-height: 50px;
 	border: 1px solid rgb(142, 30, 252);
 }
-/* Author section */
-.author {
+/* Developer section */
+.developer {
 	padding-top: 40px;
 	padding-bottom: 20px;
 	border-top: 1px solid #e4e4e4;
 }
-.author-detail img {
+.developer-detail img {
 	border-radius: 50%;
 	width: 50%;
 }
-.author-detail h4 {
+.developer-detail h4 {
 	color:rgb(142, 30, 252);
 	margin-top: 20px;
 	font-size: 17px;
 	margin-bottom: 0px;
 }
-.author-text {
+.developer-text {
 	margin-top: 10px;
 	margin-left: 10px;
 	text-align: left;
