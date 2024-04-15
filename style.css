@@ -289,15 +289,20 @@ h6 {
 	margin-bottom: 80px;
 	margin-top: 40px;
 }
-.single-feature h5 {
+.single-feature-left {
+	margin-bottom: 55px;
+}
+.single-feature h5 , .single-feature-left h5{
 	font-size: 16px;
 }
+.single-feature p , .single-feature-left p{
+	font-size: 13px;
+}
+
 .media-right-margin {
 	margin-right:25px;
 }
-.single-feature p {
-	font-size: 13px;
-}
+
 .icon-border span {
 	display: block;
 	position: relative;
@@ -484,10 +489,6 @@ h3 {
 	padding: 5px 30px;
 	margin-top: 0px;
 	font-size: 16px;
-}
-.single-feature {
-	margin-bottom: 20px;
-	margin-top: 20px;
 }
 
 .bx-controls
