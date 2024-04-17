@@ -123,14 +123,34 @@
   <section class="video-section prelative text-center white">
     <div class="section-padding video-overlay">
       <div class="container">
-        <div class="wow fadeInUp">
-          <h3>Watch Demo</h3>
-          <i class="fa fa-play" id="video-icon" aria-hidden="true"></i>
-        </div>
-        <div class="video-popup">
-          <div class="video-src">
-            <div class="iframe-src">
-              <iframe src="https://www.youtube.com/embed/Ku52zNnft8k?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="wow fadeInUp">
+              <h3>Watch APP Demo</h3>
+              <i class="fa fa-play" id="video-icon" aria-hidden="true"></i>
+            </div>
+            <div class="video-popup">
+              <div class="video-src">
+                <div class="iframe-src">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/dqHvT_V-N8g?si=v_zUj5t3mR-zpdqv?rel=0" title="YouTube video player" 
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="wow fadeInUp" data-wow-delay="0.2s">
+              <h3>Watch Car Demo</h3>
+              <i class="fa fa-play" id="video-icon-2" aria-hidden="true"></i>
+            </div>
+            <div class="video-popup-2">
+              <div class="video-src">
+                <div class="iframe-src">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/ecDk2bRiosg?si=tbKm1RtGnTjZql4Q?rel=0" title="YouTube video player" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -372,6 +392,11 @@
 	    $('.video-popup').css('display','flex');
 	    $('.iframe-src').slideDown();
 	  });
+    $('#video-icon-2').on('click',function(e){
+	    e.preventDefault();
+	    $('.video-popup-2').css('display','flex');
+	    $('.iframe-src').slideDown();
+	  });
     //設置了點擊事件，當點擊 .video-popup 彈出視窗時，檢查點擊的目標元素是否為 IFRAME，
     //如果不是則隱藏 .video-popup 彈出視窗，並將其中的 iframe 元素的 src 屬性設置為空，然後重新設置為原始的 video_src。
 	  $('.video-popup').on('click',function(e){
@@ -382,6 +407,16 @@
 	    $('.iframe-src').slideUp();
 	    $('.video-popup iframe').attr('src'," ");
 	    $('.video-popup iframe').attr('src',video_src);
+	  }
+	  });
+    $('.video-popup-2').on('click',function(e){
+	    var $target = e.target.nodeName;
+	    var video_src = $(this).find('iframe').attr('src');
+	    if($target != 'IFRAME'){
+	    $('.video-popup-2').fadeOut();
+	    $('.iframe-src').slideUp();
+	    $('.video-popup-2 iframe').attr('src'," ");
+	    $('.video-popup-2 iframe').attr('src',video_src);
 	  }
 	  });
     // 初始化了一個 bxSlider 輪播插件，設置了分頁器為隱藏狀態。

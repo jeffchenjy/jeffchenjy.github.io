@@ -250,7 +250,7 @@ h6 {
 	margin: 0 auto;
 	cursor:pointer;
 }
-.video-popup {
+.video-popup, .video-popup-2{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -266,19 +266,19 @@ h6 {
 	-ms-flex-pack: center !important;
 	justify-content: center !important;
 }
-.video-popup .video-src {
+.video-popup .video-src,.video-popup-2 .video-src{
 	position: relative;
 	width: 700px;
 	max-width: 80%;
 }
-.video-popup .iframe-src {
+.video-popup .iframe-src, .video-popup-2 .iframe-src {
 	width: 100%;
 	height: 0;
 	padding-top: 56.3%;
 	position: relative;
 	display: none;
 }
-.video-popup .iframe-src iframe {
+.video-popup .iframe-src iframe, .video-popup-2 .iframe-src iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
