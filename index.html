@@ -374,7 +374,7 @@
     </div>
   </footer>
 <!-------footer End------->
-
+<button type="button" id="BackTop" class="toTop-arrow"></button>
 <!-- jquery and bootstrap js --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
@@ -480,6 +480,18 @@
 
         // 下載完成後移除標籤
         document.body.removeChild(link);
+    });
+    $(function(){
+        $('#BackTop').click(function(){ 
+            $('html,body').animate({scrollTop:0}, 333);
+        });
+        $(window).scroll(function() {
+            if ( $(this).scrollTop() > 300 ){
+                $('#BackTop').fadeIn(222);
+            } else {
+                $('#BackTop').stop().fadeOut(222);
+            }
+        }).scroll();
     });
 </script>
 </body>
