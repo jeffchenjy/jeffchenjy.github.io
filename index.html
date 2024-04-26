@@ -32,6 +32,7 @@
           <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="2">APP Features</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="3">Car Features</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="4">Developer</a></li>
+          <li class="nav-item"><button id="downloadButton" class="btn btn-primary">Download APK</button></li>
         </ul>
       </div>
     </div>
@@ -455,6 +456,31 @@
 	    topOffset: -63
 	  });
   });
+  // 獲取按鈕元素
+  const downloadButton = document.getElementById('downloadButton');
+   // 添加點擊事件監聽器
+   downloadButton.addEventListener('click', () => {
+        // 檔案的 URL
+        const fileUrl = 'file/iot_controller.apk';
+
+        // 使用 createElemenet 創建 a 標籤
+        const link = document.createElement('a');
+
+        // 將標籤的 href 屬性設置為檔案的 URL
+        link.href = fileUrl;
+
+        // 設置標籤的 download 屬性為要下載的檔案名稱
+        link.download = 'IoT Car Controller';
+
+        // 將標籤添加到文檔中
+        document.body.appendChild(link);
+
+        // 模擬點擊標籤以開始下載檔案
+        link.click();
+
+        // 下載完成後移除標籤
+        document.body.removeChild(link);
+    });
 </script>
 </body>
 </html>
