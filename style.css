@@ -119,7 +119,7 @@ span {
 .home-img img {
     position: relative;
     top: 3rem;
-    width: 22vw;
+    width: 15vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
@@ -237,7 +237,7 @@ span {
     }
     81%,
     100%{
-        content: "Android Studio/Django/MySQL";
+        content: "Android/Django/MySQL";
     }
 }
 @keyframes typing{
@@ -596,7 +596,7 @@ span {
         font-size: 2.6rem;
     }
     .home-content h1{
-        font-size: 7rem;
+        font-size: 6rem;
         margin-top: 3rem;
     }
     .home-content p{

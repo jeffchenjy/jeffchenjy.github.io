@@ -57,7 +57,7 @@ function showContent(type) {
     if (type === 'skills') {
         content.innerHTML = `
             <ul>
-                <li>Android Studio</li>
+                <li>Android</li>
                 <li>HTML/CSS/JavaScript</li>
                 <li>Django</li>
                 <li>MySQL/SQLite</li>
